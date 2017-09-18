@@ -1,0 +1,39 @@
+.taobaodiv{
+	width: 98%;
+	background:#fffaea;
+	padding:1%;
+}
+.taobaoSearch{
+	width:100%;
+	overflow: hidden;
+	min-width: 350px;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+}
+.taobaoSearch input{
+	width:74%;
+	margin-top:18%;
+	padding:17px 0 17px 6%;
+	border:none;
+	background: url(../img/iconfont-sousuo.png) no-repeat;
+	background-size: 25px 25px;
+	background-position: 10px 12px;
+	background-color: #fff;
+	display: inline-block;
+	float: left;
+}
+
+.sub{
+	width:20% !important;
+	height:53px;
+	background: url(../img/top_alpha.png) no-repeat !important;
+	background-size: 100% !important;
+	background-color: #ee4445 !important;
+	background-position: center !important;
+	padding:0 !important;
+	float: left;
+	line-height: 46px;
+}
+.taobaodiv img{
+	width: 100%;
+}

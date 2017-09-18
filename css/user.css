@@ -1,0 +1,174 @@
+.topImg{
+	width:98% !important;
+	margin:20px 1% !important;
+	background:url(../img/user_bg.jpg) no-repeat !important;
+	background-size: 100% !important;
+	padding:10px 0;
+}
+.topImg span{
+	display: block;
+	width:55px;
+	height:55px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.topImg span img{
+	display: block;
+	width: 100%;
+}
+.topImg p{
+	font-family: "微软雅黑";
+	color: #fff;
+	text-align: center;
+	margin-top:5px;
+	margin-bottom: 0;
+}
+.topImg p:nth-of-type(1){
+	font-size:16px;
+}
+.topImg p:nth-of-type(2){
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+.detial-list{
+	border:1px solid #DEDEDE;
+}
+.user-detial{
+	width: 100% !important;
+	margin:0 !important;
+	border-bottom: 1px solid #DEDEDE;
+}
+.user-detial a {
+	display: block;
+	width:100%;
+	height: 50px;
+	text-decoration: none;
+}
+.user-detial a img{
+	display: inline-block;
+	width:30px;
+	height:30px;
+	margin-top:10px;
+	margin-left: 10px;
+	vertical-align: top;
+}
+.user-detial a span{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 30px;
+	margin-top:10px;
+	color:#555555;
+}
+.user-detial a span:nth-of-type(2){
+	float:right;
+	color: red;
+}
+.user-detial a img:nth-of-type(2){
+	width: 15px; 
+	height:15px;
+	float: right;
+	margin-right: 15px;
+	margin-top: 19px !important;
+	margin-left: 5px !important;
+}
+.detial-list div:nth-of-type(8){
+	border: none;
+}
+.tuichu a{
+	display: block;
+	width:100%;
+	height: 45px;
+	text-align: center;
+	text-decoration: none;
+	background:#8c6a5e;
+}
+.tuichu a img{
+	display: inline-block;
+	width:18px;
+	height:18px;
+	margin-right: 5px;
+	vertical-align: top;
+	margin-top:13.5px;
+}
+.tuichu a span{
+	display: inline-block;
+	color:#fff;
+	line-height: 45px;
+}
+.layer{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.2);
+	margin:0;
+	text-align: center;
+	position:fixed;
+	top:0;
+	left: 0;
+}
+.dialog{
+	width:240px;
+	margin:40% auto;
+}
+.menu{
+	width: 100%;
+	height:35px;
+	background:#019f95;
+	color: #fff;
+}
+.menu span{
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+	margin-top: 8px;
+}
+.menu img{
+	display: inline-block;
+	width:14px;
+	height: 14px;
+	float: right;
+	margin-right: 15px;
+	background: #fff;
+	margin-top:10px;
+	cursor: pointer;
+}
+.menu-detail{
+	width: 100%;
+	height: 104px;
+	background:#fff;
+}
+.menu-detail p{
+	margin:0;
+	margin-bottom: 20px;
+	padding-top:20px ;
+}
+.menu-detail span{
+	display: inline-block;
+	width:68px;
+	height:30px;
+	line-height: 30px;
+	background:#019f95;
+	color: #fff;
+	cursor: pointer;
+}
+.menu-detail span:nth-of-type(2){
+	opacity: 0.6;
+}
+.layer-index{
+	width:360px !important;
+}
+.title{
+	background: #fff;
+	border-bottom: 1px dashed #DEDEDE;
+	height:50px;
+}
+.title h3{
+	width:100%;
+	line-height: 50px;
+	background:#f8f8f8;
+}
+.title a{
+	color:red;
+	line-height: 50px;
+	cursor: pointer;
+}

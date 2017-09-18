@@ -1,0 +1,398 @@
+@media only screen and (max-width:498px ) {
+	.banner #banner{
+		width: 200% !important;
+		position: relative;
+		float: left;
+		margin:0 !important;
+	}
+	.banner{
+		overflow: hidden;
+	}
+	.banner p{
+		width: 10%;
+		height: auto;
+		float: left;
+		margin:0 45%;
+	}
+	.banner p a{
+		width:8px;
+		height:8px;
+		margin:5px;
+		background:#7fc242;
+		border-radius: 50%;
+	}
+}
+@media only screen and (max-width:435px ) {
+	.mall-list a{
+		width: 22.5% !important;
+	}
+	.nav-select a{
+		width: 22.5% !important;
+	}
+	.serch input{
+		width: 65% !important;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.banner p{
+		width:15% !important;
+		margin:0 42.5% !important;
+	}
+}
+*{
+	font-family: "微软雅黑";
+	color:#666666;
+}
+body{
+	width:100%;
+	height:auto;
+	background:#f5f5f5;
+	margin:0;
+	min-width: 320px;
+}
+.header{
+	width:100%;
+	background:#ff8200;
+	margin:0;
+	height:44px;
+}
+.header a{
+	display: inline-block;
+	width:243px;
+	height:auto;
+	padding:4.5px 0 0 10px;
+}
+.header img{
+	width:243px;
+	height:auto;
+}
+.header a:nth-of-type(2){
+	width:25px;
+	height: auto;
+	padding:9.5px 10px 0 0;
+	float: right;
+}
+.header a:nth-of-type(2) img{
+	width:25px;
+	height: auto;
+}
+.content,.banner,.banner div{
+	width:100%;
+	height:auto;
+}
+.content div{
+	width:98%;
+	margin:1% ;
+	background: #fff;
+}
+.banner a{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	height:auto;
+	
+}
+.banner a img{
+	width: 100%;
+	height: auto;
+}
+.nav-select a{
+	display: inline-block;
+	width:23.5%;
+	height:100px;
+	margin-top:10px;
+	text-align: center;
+	clear:both;
+	text-decoration: none;
+	color: #000;
+}
+.nav-select a img{
+	width: 44px;
+	height:44px;
+}
+.nav-select a span{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.hotShop-title span{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 40px;
+	margin-left: 10px;
+	color: #6fd8c7;
+}
+.hotShop-title{
+	width:100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	border-bottom: 1px solid #f5f5f5;
+}
+.hotShop-title a{
+	text-decoration: none;
+	font-size: 12px;
+	color:#000000;
+	float: right;
+	margin:14px 10px 0 0;
+}
+.mall-list{
+	padding-top:20px 
+}
+.mall-list a{
+	display: inline-block;
+	width:23.5%;
+	margin-bottom: 20px;
+	clear: both;
+	text-align: center;
+	text-decoration: none;
+	color:#999999;
+	font-size: 12px;
+}
+.mall-list a img{
+	width: 60px;
+}
+.mall-list a span{
+	display: block;
+	width:100%;
+	line-height: 20px;
+}
+.mall-list a span i{
+	color:red;
+}
+.newBaoliao a img{
+	width: 20px;
+	height:20px;
+}
+.newBaoliao a {
+	margin-top:10px;
+}
+.biaoliaoDiv{
+	width: 100% !important;
+	margin:0 !important;
+}
+.biaoliaoTupian{
+	width:100% !important;
+	margin:10px 0 0 0 !important;
+	border-bottom: 1px solid #f5f5f5;
+}
+.img{
+	width: 17% !important;
+	display: inline-block;
+	margin:0 10px 0 0 !important;
+	clear: both;
+	vertical-align: top;
+	text-align: center;
+}
+.biaoliaoTupian img{
+	width:100% ;
+	max-width: 90px;
+	max-height: 90px;
+}
+.biaoliaoTupian a{
+	text-decoration: none;
+}
+.textDiv{
+	width: 75% !important;
+	display: inline-block;
+	margin:0 0 0 10px !important;
+	font-size: 12px;
+	color:#000;
+}
+.top{
+	width: 100% !important;
+	margin:0 !important;
+}
+.textDiv p{
+	color:red;
+	margin:8px 0 0 0;
+}
+.textDiv p:nth-of-type(2){
+	margin:20px 0 0 0 !important;
+}
+.textDiv p span:nth-of-type(2){
+	text-decoration: line-through;
+	color:#adadad;
+}
+.textDiv p span:nth-of-type(3){
+	float: right;
+	color: #666666;
+}
+.text-footer{
+	width:100% !important;
+	text-align: center;
+	margin:0 !important;
+	padding:10px 0;
+}
+.text-footer a{
+	font-size: 12px;
+	color:#666666;
+	text-decoration: none;
+}
+.login div{
+	width:30% !important;
+	margin:0 !important;
+	display: inline-block;
+	text-align: center;
+	padding:10px 0;
+}
+.login div a{
+	text-decoration: none;
+	font-size: 12px;
+	color:#666666;
+}
+.leixing a{
+}
+.leixing a img{
+	width: 30px;
+	height: 30px;
+}
+.leixing a span{
+	display: block;
+	width: 100%;
+}
+.leixing div:nth-of-type(2) a span{
+	color: red;
+}
+.leixing div:nth-of-type(1) a span{
+	color: #00bb9c;
+}
+.foot{
+	width:100%;
+	text-align: center;
+	font-size: 12px;
+	margin:30px 0 10px 0;
+	color: #999999;
+}
+#btn{
+	position: fixed;
+	width: 40px !important;
+	height: 40px !important;
+	bottom: 40px;
+	right: 20px;
+}
+#btn img{
+	width: 40px;
+	height: 40px;
+}
+#back:hover{
+	cursor: pointer;
+}
+
+.baoliaoimgHeader{
+	margin-top: 5px;
+	width:25px !important;
+}
+.baoliaoimgHeader img{
+	width: 25px !important;
+	height: 25px !important;
+}
+.header h4{
+	display: inline-block;
+	color: #fff;
+	position:absolute;
+	width: 50%;
+	top:-8px;
+	left: 23%;
+	text-align: center;
+	min-width: 180px;
+}
+
+.serch input{
+	width: 70%;
+	height: auto;
+	padding:10px 0 10px 40px;
+	border: none;
+	background: url(../img/iconfont-sousuo.png) no-repeat 5px 5px;
+	background-size: 25px;
+}
+.serch span{
+	display: inline-block;
+	width:20%;
+	height: 39px;
+	float: right;
+	line-height: 39px;
+	text-align: center;
+	color: #fff;
+	background: #009999;
+}
+.baoliao-list{
+	width:25% !important;
+	text-align: center;
+	float: left;
+	margin:0 !important;
+}
+.baoliao-list span{
+	color: #666;
+}
+.biaoliao-content{
+	margin:10px 0 0 0 !important;
+	float: left;
+}
+.pannel{
+	width: 98%;
+	height: 100%;
+	min-height: 100%;
+	padding:1%;
+	position: fixed;
+	background: rgba(255,255,255,0.95);
+	top:0;
+}
+.pannel-header{
+	width: 100%;
+	height: 41px;
+}
+.pannel-header p{
+	width:100%;
+	height: 41px;
+	background: #eeeeee;
+	text-align: center;
+	font-size: 14px;
+	line-height: 41px;
+	color: #00BB9C;
+	font-weight: bold;
+}
+.shaixuan-list{
+	width:100%;
+	padding-top:14px;
+	float: left;
+}
+.shaixuan-list a{
+	text-decoration: none;
+	float: left;
+	color: #666;
+	width:25%;
+	height: 22px;
+	text-align: center;
+	margin-bottom: 17px;
+	cursor: pointer;
+	font-size: 14px;
+}
+.shaixuan-list a:hover,.shaixuan-list a:active{
+	color:#FF8200;
+	font-weight: bold;
+}
+.shaixuan-list a:nth-of-type(1){
+	color:#FF8200;
+	font-weight: bold;
+}
+.pannel-footer{
+	width:100%;
+	margin:1% 0;
+}
+.pannel-footer p{
+	width: 100%;
+	height:41px;
+	line-height: 41px;
+	text-align: center;
+	background:#eeeeee;
+	cursor: pointer;
+	clear: both;
+}
+.ui-loader{
+	display: none !important;
+}
+.ui-page{
+	outline: none;
+}
+

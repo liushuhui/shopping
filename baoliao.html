@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>优惠爆料</title>
+	</head>
+	<link href="css/index.css" rel="stylesheet" />
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/backtop.js"></script>
+	<script>
+			$(function(){
+				$("#newBaoliao span").css("color","#00BB9C");
+				$("#newBaoliao").css("border-color","#00BB9C");
+				$("#newBaoliao").click(function(){
+					$("#newBaoliao span").css("color","#00BB9C");
+				    $("#newBaoliao").css("border-color","#00BB9C");
+				});
+				var d=$("body").width();
+				$(".pannel").css({"left":d,"display":"none"});
+				$(".header a").click(function(){
+					$(".pannel").animate({left:0}).css("display","block");
+				});
+				$(".pannel-footer p,.pannel a").click(function(){
+					$(".pannel").animate({left:d});
+					$(".pannel").css("display","none");
+				});
+			});
+	</script>
+	<body>
+		<div class="header">
+			<a href="javascript:history.back();" class="baoliaoimgHeader"><img src="img/iconfont-fanhui.png"/></a>
+			<h4>优惠爆料</h4>
+			<a href="#"><img src="img/iconfont-shaixuan.png"/></a>
+		</div>
+		
+		<div class="content">
+			<div class="serch">
+				<input type="text" placeholder="请输入你想要查找的爆料"/>
+				<span>搜索</span>
+		    </div>
+			<div class="hotShop">
+				<div class="hotShop-title baoliao-list" id="newBaoliao">
+					<span>最新爆料</span>
+				</div>
+				<div class="hotShop-title baoliao-list" id="goodBaoliao">
+					<span>优质爆料</span>
+				</div>
+				<div class="hotShop-title baoliao-list" id="hotBaoliao">
+					<span>热门排行</span>
+				</div>
+				<div class="hotShop-title baoliao-list" id="moreBaoliao">
+					<span>白菜汇</span>
+				</div>
+				<div class="biaoliaoDiv">
+					<div class="biaoliaoTupian biaoliao-content">
+						<a href="detialbaoliao.html">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="biaoliaoTupian biaoliao-content">
+						<a href="#">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="biaoliaoTupian biaoliao-content">
+						<a href="#">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="biaoliaoTupian biaoliao-content">
+						<a href="#">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="text-footer">
+						<a href="#">加载更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="login">
+				<div class="loginDiv"><a href="login.html">登录</a></div>
+				<div class="loginDiv"><a href="login.html">注册</a></div>
+				<div class="loginDiv" id="back">返回顶部</div>
+			</div>
+			<div class="login leixing">
+				<div class="loginDiv"><a href="#"><img src="img/178hui-app.png"/><span>客户端</span></a></div>
+				<div class="loginDiv"><a href="#"><img src="img/178hui-shouji.png"/><span>触摸屏</span></a></div>
+				<div class="loginDiv"><a href="#"><img src="img/178hui-diannao.png"/><span>电脑版</span></a></div>
+			</div>
+		</div>
+		<p class="foot">Copyright © 2012-2015 一起惠返利网 m.178hui.com 版权所有</p>
+		<div class="pannel">
+			<div class="pannel-header"><p>商城筛选</p></div>
+			<div class="shaixuan-list">
+				<a>全部商城</a>
+				<a>京东商城</a>
+				<a>亚马逊</a>
+				<a>苏宁易购</a>
+				<a>一号店</a>
+				<a>天猫商城</a>
+				<a>易迅网</a>
+				<a>建一网</a>
+				<a>国美在线</a>
+				<a>当当网</a>
+				<a>亚马逊</a>
+				<a>我买网</a>
+				<a>优购商城</a>
+				<a>新蛋</a>
+				<a>顺丰优选</a>
+				<a>京东商城wap端</a>
+				<a>飞飞商城</a>
+				<a>为为网</a>
+				<a>淘宝网</a>
+				<a>沱沱社工</a>
+				<a>银泰网</a>
+				<a>唯品会</a>
+				<a>可得眼镜</a>
+				<a>华强北商城</a>
+				<a>天天网</a>
+				<a>母婴之家</a>
+				<a>聚美优品</a>
+				<a>知我药妆</a>
+				<a>1号药网</a>
+				<a>酒仙网</a>
+				<a>尚妆网</a>
+			</div>
+			<div class="pannel-footer">
+			    <p>关闭</p>
+		    </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link href="css/index.css" rel="stylesheet" />
+	    <link href="css/login.css" rel="stylesheet" />
+	    <script src="js/jquery-1.10.1.min.js"></script>
+	    <script>
+	    	$(function(){
+	    		var count=1;
+	    		$("#password").click(function(){
+	    			count++;
+	    			if(count%2==0){
+	    			    $(this).css({"background":"url(img/u_s2.png)","background-repeat":"no-repeat","background-size":"cover"});
+	    			    $("#password1").hide().siblings().show();
+	    			    var text_value=$("#password1").val();
+	    			    $("#password2").attr("value",text_value);
+	    			}else{
+	    				$(this).css({"background":"url(img/u_s1.png)","background-repeat":"no-repeat","background-size":"cover"});
+	    			    $("#password1").show().siblings("input").hide();
+	    			    var text_value=$("#password2").val();
+	    			    $("#password1").attr("value",text_value);
+	    			}
+	    		});
+	    		$("#ok").click(function(){
+	    			count++;
+	    			if(count%2==0){
+	    			    $(this).css({"background":"url(img/u_s2.png)","background-repeat":"no-repeat","background-size":"cover"});
+	    			    $("#ok1").hide().siblings().show();
+	    			    var text_value=$("#ok1").val();
+	    			    $("#ok2").attr("value",text_value);
+	    			}else{
+	    				$(this).css({"background":"url(img/u_s1.png)","background-repeat":"no-repeat","background-size":"cover"});
+	    			    $("#ok1").show().siblings("input").hide();
+	    			    var text_value=$("#ok2").val();
+	    			    $("#ok1").attr("value",text_value);
+	    			}
+	    		});
+	    		$(".elseDiv input").focus(function(){
+	    			if($("#emailInput").innerText!=""){
+	    				$(".elseSpan").show();
+	    			}else{
+	    				$(".elseSpan").hide();
+	    			}
+	    		});
+               $(".elseSpan").click(function(){
+               	    $("#emailInput").val("");
+               });
+	    	});
+	    </script>
+		<title>注册成功</title>
+	</head>
+	<body>
+		<div class="header login-head">
+			<a href="javascript:history.back();" class="baoliaoimgHeader"><img src="img/iconfont-fanhui.png"/></a>
+			<h4>注册成功</h4>
+		</div>
+		<div class="content">
+			<div class="okxinxi">
+				<div class="zhuce-okimg"><img src="img/iconfont-iconxianluyudingchenggong.png"/></div>
+				<h1>恭喜您！已成功注册一起惠返利网！</h1>
+				<h2>邮箱激活验证已经发送到您的邮箱，请尽快验证！</h2>
+				<h3>如果您没收到邮箱，请查看垃圾邮件箱或点击</h3>
+				<div><span>重新发送激活邮件</span></div>
+			</div>
+			<div class="login leixing">
+				<div class="loginDiv"><a href="login.html"><img src="img/178hui-app.png"/><span>客户端</span></a></div>
+				<div class="loginDiv"><a href="login.html"><img src="img/178hui-shouji.png"/><span>触摸屏</span></a></div>
+				<div class="loginDiv"><a href="#"><img src="img/178hui-diannao.png"/><span>电脑版</span></a></div>
+			</div>
+		</div>
+		<p class="foot">Copyright © 2012-2015 一起惠返利网 m.178hui.com 版权所有</p>
+		</div>
+	</body>
+</html>

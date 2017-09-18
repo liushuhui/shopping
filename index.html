@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link href="css/index.css" rel="stylesheet" />
+		<link href="css/user.css" rel="stylesheet" />
+	    <script src="js/jquery-1.10.1.min.js"></script>
+	    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+	    <script src="js/index.js"></script>
+		<title>返利网触摸版</title>
+	</head>
+	<style>
+	    .tishiDiv{
+	position: absolute;
+	width: 242px;
+	top:350px;
+	left: 100px;
+	background: #ff9901;
+	border-radius: 15px;
+	font-size: 12px;
+	text-align: center;
+	box-shadow: 1px 2px #DEDEDE;
+}
+.tishiDiv p{
+	color: #fff;
+	line-height: 22px;
+}
+.tishiDiv span{
+	display: block;
+	width: 0;
+	height: 0;
+	border:10px solid transparent; 
+    border-bottom-color:#ff9901;
+    border-top:0;
+	position: absolute;
+	top:20px;
+	left: -10px;
+}
+	</style>
+	<script>
+		$(function(){
+			var x=document.getElementById("adv2").clientWidth;
+			var d=document.getElementById("banner").clientLeft;
+			var wid=document.getElementById("banner").clientWidth;
+			$("#cicle2").css("opacity","0.5");
+			var timer=setInterval(move,3000);
+			function move(){
+				if(d==0){
+					d=-x;
+					$("#banner").animate({left:d});
+					$("#cicle1").css("opacity","0.5");
+					$("#cicle2").css("opacity","1");
+				}
+				else{
+					d=0;
+					$("#banner").animate({left:d});
+					$("#cicle1").css("opacity","1");
+					$("#cicle2").css("opacity","0.5");
+				}
+			}
+			//滑动效果
+			$("#banner").on("swipeleft",function(){
+				d-=x;
+				if(d<=wid-2*wid){
+					d=x;
+					return false;
+				}else{
+					$("#banner").animate({left:d});
+					$("#cicle2").css("opacity",1).siblings().css("opacity",0.5);
+				}
+			});
+//			$("#banner").on("swiperight",function(){
+//				d=0;
+//			    $("#banner").animate({left:d});
+//			});
+			$("#banner").on("swiperight",function(){
+				d+=x;
+				if(d>0){
+					d=0;
+					return;
+				}else{
+					$("#banner").animate({left:d});
+					$("#cicle1").css("opacity",1).siblings().css("opacity",0.5);
+				}
+			});
+			$("#banner").hover(function(){
+				clearInterval(timer);
+			},function(){
+				timer=setInterval(move,3000);
+			});
+			$("#cicle1").click(function(){
+				d=0;
+				$("#banner").animate({left:d});
+				$("#cicle1").css("opacity",1).siblings().css("opacity",0.5);
+			});
+			$("#cicle2").click(function(){
+				d=-x;
+				$("#banner").animate({left:d});
+				$("#cicle2").css("opacity","1").siblings().css("opacity","0.5");
+			});
+			$("#btn").css("display","none");
+			$("#btn img").eq(1).hide();
+			$(window).scroll(function(){
+				var height=$(document).scrollTop();
+				if(height>=350){
+					$("#btn").fadeIn();
+				}else{
+					$("#btn img").eq(1).hide().siblings().show()
+					$("#btn").fadeOut();
+				}
+			});
+			$("#btn,#back").click(function(){
+					$("#btn img").eq(0).hide().siblings().show();
+					$("body").animate({scrollTop:0});
+				});
+			//tishiDiv的弹出过程
+			$(".tishiDiv").hide();
+				$(".btn-zhuce").click(function(){
+						$(".tishiDiv").fadeIn();
+						setTimeout(remove,2000);
+				});
+				function remove(){
+					$(".tishiDiv").fadeOut();
+				}
+		});
+		
+	</script>
+	<body>
+		<div class="header">
+			<a href="#"><img src="img/m-index_02.png" /></a>
+			<a href="#"><img src="img/m-index_05.png"/></a>
+		</div>
+		<div class="content">
+			<div class="nav">
+				<div class="banner">
+					<div id="banner">
+					    <a id="adv1" href="#"><img src="img/10250290397.png"/></a>
+					    <a id="adv2" href="#"><img src="img/10225357963.jpg"/></a>
+					</div>
+					<p>
+						<a id="cicle1"></a>
+						<a id="cicle2"></a>
+					</p>
+				</div>
+				<div class="nav-select">
+					<a href="mall.html" target="_top"><img src="img/m-index_10.png"/><span>商城返利</span></a>
+					<a href="baoliao.html" target="_top"><img src="img/m-index_12.png"/><span>优惠爆料</span></a>
+					<a href="taobao.html" target="_top"><img src="img/m-index_14.png"/><span>淘宝返利</span></a>
+					<a href="new-view.html" target="_top"><img src="img/m-index_16.png"/><span>购物咨询</span></a>
+					<a class="btn-zhuce"><img src="img/m-index_22.png"/><span>比价网</span></a>
+					<a href="login.html" target="_top"><img src="img/m-index_24.png"/><span>有奖签到</span></a>
+					<a href="mail.html" target="_top"><img src="img/m-index_26.png"/><span>订单管理</span></a>
+					<a href="user.html" target="_top"><img src="img/m-index_27.png"/><span>会员中心</span></a>
+				</div>
+			</div>
+			<div class="hotShop">
+				<div class="hotShop-title">
+					<span>热门商城</span>
+					<a href="#">更多</a>
+				</div>
+				<div class="mall-list">
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/mall_logo/www.jd.com.png"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/2014/1110/14542624089.jd"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/mall_logo/www.amazon.cn.png"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/2014/0427/16595789629.gif"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/2015/0506/17143913934.png"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/mall_logo/www.gome.com.cn.png"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/2015/0211/16471979498.png"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+					<a class="tuichu" href="#">
+						<img src="http://www.178hui.com/upload/2014/0427/17020977409.gif"/>
+						<span>最高返<i>2.8%</i></span>
+					</a>
+				</div>
+			</div>
+			<div class="hotShop">
+				<div class="hotShop-title newBaoliao">
+					<span>最新爆料</span>
+					<a href="#"><img src="img/iconfont-shuaxin.png"/></a>
+				</div>
+				<div class="biaoliaoDiv">
+					<div class="biaoliaoTupian">
+						<a href="#">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="biaoliaoTupian">
+						<a href="#">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="biaoliaoTupian">
+						<a href="#">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="biaoliaoTupian">
+						<a href="#">
+							<div class="img"><img src="http://baoliao.178hui.com/upload/2015/0710/12332059693.jpg"/></div>
+						    <div class="textDiv">
+							    <div class="top">韩国现代（HYUNDAI）BD-YS2003多功能养生壶煎药壶2.0L</div>
+							    <p>手机端：99元包邮</p>
+							    <p><span>￥99.00</span>&nbsp;&nbsp;<span>￥138.00</span><span>京东商城 07-10 12：33</span></p>
+						    </div>
+						</a>
+					</div>
+					<div class="text-footer">
+						<a href="#">加载更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="login">
+				<div class="loginDiv"><a target="_top" href="login.html">登录</a></div>
+				<div class="loginDiv"><a target="_top" href="zhuce.html">注册</a></div>
+				<div class="loginDiv" id="back">返回顶部</div>
+			</div>
+			<div class="login leixing">
+				<div class="loginDiv"><a href="#"><img src="img/178hui-app.png"/><span>客户端</span></a></div>
+				<div class="loginDiv"><a href="#"><img src="img/178hui-shouji.png"/><span>触摸屏</span></a></div>
+				<div class="loginDiv"><a href="#"><img src="img/178hui-diannao.png"/><span>电脑版</span></a></div>
+			</div>
+		</div>
+		<p class="foot">Copyright © 2012-2015 一起惠返利网 m.178hui.com 版权所有</p>
+		<div id="btn">
+			<img src="img/iconfont-fanhuidingbu.png"/>
+			<img src="img/iconfont-fanhuidingbu_up.png" />
+		</div>
+		<div class="layer">
+			<div class="dialog layer-index">
+				<div class="title">
+					<h3>亲！您还没登录一起惠哦！</h3>
+				</div>
+				<div class="title">
+					<a class="loginBtn">马上登录</a>
+				</div>
+				<div class="title">
+					<a class="zhuceBtn">免费注册</a>
+				</div>
+				<div class="title">
+					<a href="#" style="text-decoration: none;">先购物，再返利</a>
+				</div>
+				<div class="title">
+					<a class="cancelBtn">取消</a>
+				</div>
+			</div>
+		</div>
+		<div class="tishiDiv">
+			<p>请耐心等待一下，我们正在拼命开发中..</p>
+			<span></span>
+		</div>
+	</body>
+</html>

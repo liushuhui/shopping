@@ -1,0 +1,164 @@
+.login-head{
+	background:#4eabe8;
+}
+.xinxi{
+	width: 94% !important;
+	padding: 30px 2%;
+}
+.password{
+	width: 100% !important;
+	height: auto;
+	position: relative;
+	margin:0 !important;
+}
+.password input,.xinxi input{
+	width: 98%;
+	height: 44px;
+	padding-left:10px ;
+	margin:0 auto;
+	margin-bottom: 20px;
+	border:1px solid #dedede;
+	border-radius: 10px;
+	color:#000000;
+	font-size: 14px;
+}
+.password span{
+	width:51px;
+	height:35px;
+	position: absolute;
+	background:url(../img/u_s1.png) no-repeat;
+	background-size: cover;
+	top:8px;
+	right:15px;
+}
+.password span:hover{
+	cursor: pointer;
+}
+.elseSpan1,.elseSpan2,.elseSpan3,.elseSpan4{
+	width:25px !important;
+	height:25px !important;
+	background: url(../img/u_close.png) no-repeat !important;
+	background-size: cover !important;
+	top:12px !important;
+	display: none;
+}
+.xieyi p{
+	font-size: 12px;
+}
+.xieyi p a{
+	text-decoration: none;
+}
+.btn-zhuce{
+	padding-bottom:10px;
+}
+.btn-zhuce a{
+	display: block;
+	background:#4eabe8;
+	width: 85%;
+	height:40px;
+	margin:0 auto;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+}
+.btn-login a{
+	background:#fb6054;
+}
+.serchMima{
+	width:86% !important;
+	margin: 1% 6% !important;
+}
+.serchMima span:nth-of-type(1){
+	display: inline-block;
+	width:19px;
+	height:19px;
+	background:url(../img/img/icon.png) no-repeat -75px -25px;
+	margin-right: 10px;
+	background-size: 150px auto;
+	vertical-align: top;
+	cursor: pointer;
+}
+.serchMima span:nth-of-type(2){
+	font-size: 14px;
+	cursor: pointer;
+}
+.serchMima a{
+	font-size: 14px;
+	color: #4eabe8;
+	text-decoration: none;
+	float: right;
+	
+}
+
+
+
+.zhuce-okimg img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin:0 auto;
+}
+.okxinxi{
+	margin-bottom: 20px !important;
+	padding:25px 0;
+}
+.okxinxi h1{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.okxinxi h2,h3{
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+}
+.okxinxi h2{
+	line-height: 30px;
+}
+.okxinxi div span{
+	display: block;
+	width:135px;
+	height:40px;
+	line-height: 40px;
+	background: #fd4341;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	margin:0 auto;
+	cursor: pointer;
+}
+.tishiDiv{
+	position: absolute;
+	top:25px;
+	left: 50px;
+}
+.tishiDiv p{
+	background:#ff9901;
+	color: #fff;
+	width:200px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 10px;
+	box-shadow: 1px 2px #DEDEDE;
+}
+.tishiDiv span{
+	display: block;
+    width:0; height:0;
+    line-height:0;
+    border:10px solid transparent; 
+    border-right-color:#ff9901;
+    border-left:0;
+    position: absolute;
+    top:43px;
+    left: 20px;
+}
